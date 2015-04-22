@@ -45,14 +45,18 @@
   popPC.sourceView = self.button;
   popPC.sourceRect = self.button.bounds;
 
+  // add this to override default compact behavior and get popover on compact screens
+  pvc.popoverPresentationController.delegate = self;
+
   // present the new controller
   [self presentViewController:pvc animated:YES completion:nil];
 
 }
 
-//- (UIModalPresentationStyle) adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller {
-//  return UIModalPresentationNone;
-//}
+// this is required for the UIPopoverPresentationControllerDelegate
+- (UIModalPresentationStyle) adaptivePresentationStyleForPresentationController:(UIPresentationController *)controller {
+  return UIModalPresentationNone;
+}
 
 
 @end
