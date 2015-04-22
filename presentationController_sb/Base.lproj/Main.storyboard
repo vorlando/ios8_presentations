@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="7531" systemVersion="14D131" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2015-04-08 14.20.25" translatesAutoresizingMaskIntoConstraints="NO" id="rvW-Jb-tiL">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zyN-KZ-b0R">
+                                <rect key="frame" x="268" y="79" width="64" height="30"/>
+                                <state key="normal" title="Click Me!">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="clickMe:" destination="BYZ-38-t0r" eventType="touchUpInside" id="QlS-tn-fWi"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="rvW-Jb-tiL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="Blv-RI-rOf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rvW-Jb-tiL" secondAttribute="bottom" id="ONG-0T-cYJ"/>
+                            <constraint firstItem="zyN-KZ-b0R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="59" id="Wn5-Tm-ThW"/>
+                            <constraint firstAttribute="centerX" secondItem="zyN-KZ-b0R" secondAttribute="centerX" id="dHx-c2-Svl"/>
+                            <constraint firstAttribute="trailing" secondItem="rvW-Jb-tiL" secondAttribute="trailing" id="fcd-FU-ELF"/>
+                            <constraint firstItem="rvW-Jb-tiL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="yUB-ws-Vi9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="button" destination="zyN-KZ-b0R" id="HBJ-Mh-1ML"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="334" y="-127"/>
+        </scene>
+        <!--Pop Up View Controller-->
+        <scene sceneID="Hak-6m-bw4">
+            <objects>
+                <viewController storyboardIdentifier="popOverViewController" id="cj9-zn-BDw" customClass="PopUpViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Y0-tm-F0b"/>
+                        <viewControllerLayoutGuide type="bottom" id="Io1-Mh-vBx"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="nFr-Ld-OQF">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e6O-Qz-7PK">
+                                <rect key="frame" x="285" y="285" width="30" height="30"/>
+                                <state key="normal" title="Bye">
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="bye:" destination="cj9-zn-BDw" eventType="touchUpInside" id="MMW-cc-lXg"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="e6O-Qz-7PK" firstAttribute="centerY" secondItem="nFr-Ld-OQF" secondAttribute="centerY" id="9ic-nN-bVk"/>
+                            <constraint firstItem="e6O-Qz-7PK" firstAttribute="centerX" secondItem="nFr-Ld-OQF" secondAttribute="centerX" id="ZHW-Y7-NL9"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PT2-aV-ega" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1123" y="-120"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="2015-04-08 14.20.25" width="1088" height="816"/>
+    </resources>
+</document>
