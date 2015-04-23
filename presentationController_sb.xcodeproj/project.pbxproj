@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6104E9251AE8FCC9001AA1FB /* ViewToPopUpPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 6104E9241AE8FCC9001AA1FB /* ViewToPopUpPresentationController.m */; };
 		61E23CAF1AE6BCFA00E69A69 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E23CAE1AE6BCFA00E69A69 /* main.m */; };
 		61E23CB21AE6BCFA00E69A69 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E23CB11AE6BCFA00E69A69 /* AppDelegate.m */; };
 		61E23CB51AE6BCFA00E69A69 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E23CB41AE6BCFA00E69A69 /* ViewController.m */; };
@@ -15,7 +16,8 @@
 		61E23CBD1AE6BCFA00E69A69 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 61E23CBB1AE6BCFA00E69A69 /* LaunchScreen.xib */; };
 		61E23CC91AE6BCFA00E69A69 /* presentationController_sbTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E23CC81AE6BCFA00E69A69 /* presentationController_sbTests.m */; };
 		61E23CD41AE6CE4000E69A69 /* PopUpViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E23CD31AE6CE4000E69A69 /* PopUpViewController.m */; };
-		61E23CD71AE72B0900E69A69 /* PopoverPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E23CD61AE72B0900E69A69 /* PopoverPresentationController.m */; };
+		61E23CDA1AE8423E00E69A69 /* ViewToPopUpTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E23CD91AE8423E00E69A69 /* ViewToPopUpTransitionDelegate.m */; };
+		61E23CDE1AE843D800E69A69 /* ViewToPopUpTransitionDelegate+AnimatedTransitioning.m in Sources */ = {isa = PBXBuildFile; fileRef = 61E23CDD1AE843D800E69A69 /* ViewToPopUpTransitionDelegate+AnimatedTransitioning.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6104E9231AE8FCC9001AA1FB /* ViewToPopUpPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewToPopUpPresentationController.h; sourceTree = "<group>"; };
+		6104E9241AE8FCC9001AA1FB /* ViewToPopUpPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewToPopUpPresentationController.m; sourceTree = "<group>"; };
 		61E23CA91AE6BCFA00E69A69 /* presentationController_sb.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = presentationController_sb.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		61E23CAD1AE6BCFA00E69A69 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		61E23CAE1AE6BCFA00E69A69 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -44,8 +48,10 @@
 		61E23CC81AE6BCFA00E69A69 /* presentationController_sbTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = presentationController_sbTests.m; sourceTree = "<group>"; };
 		61E23CD21AE6CE4000E69A69 /* PopUpViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopUpViewController.h; sourceTree = "<group>"; };
 		61E23CD31AE6CE4000E69A69 /* PopUpViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopUpViewController.m; sourceTree = "<group>"; };
-		61E23CD51AE72B0900E69A69 /* PopoverPresentationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PopoverPresentationController.h; sourceTree = "<group>"; };
-		61E23CD61AE72B0900E69A69 /* PopoverPresentationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PopoverPresentationController.m; sourceTree = "<group>"; };
+		61E23CD81AE8423E00E69A69 /* ViewToPopUpTransitionDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewToPopUpTransitionDelegate.h; sourceTree = "<group>"; };
+		61E23CD91AE8423E00E69A69 /* ViewToPopUpTransitionDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewToPopUpTransitionDelegate.m; sourceTree = "<group>"; };
+		61E23CDC1AE843D800E69A69 /* ViewToPopUpTransitionDelegate+AnimatedTransitioning.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "ViewToPopUpTransitionDelegate+AnimatedTransitioning.h"; sourceTree = "<group>"; };
+		61E23CDD1AE843D800E69A69 /* ViewToPopUpTransitionDelegate+AnimatedTransitioning.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "ViewToPopUpTransitionDelegate+AnimatedTransitioning.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,18 +93,17 @@
 		61E23CAB1AE6BCFA00E69A69 /* presentationController_sb */ = {
 			isa = PBXGroup;
 			children = (
-				61E23CD51AE72B0900E69A69 /* PopoverPresentationController.h */,
-				61E23CD61AE72B0900E69A69 /* PopoverPresentationController.m */,
+				61E23CDB1AE8439700E69A69 /* ViewToPopUpTransitioningDelegate */,
 				61E23CB01AE6BCFA00E69A69 /* AppDelegate.h */,
 				61E23CB11AE6BCFA00E69A69 /* AppDelegate.m */,
 				61E23CB31AE6BCFA00E69A69 /* ViewController.h */,
 				61E23CB41AE6BCFA00E69A69 /* ViewController.m */,
+				61E23CD21AE6CE4000E69A69 /* PopUpViewController.h */,
+				61E23CD31AE6CE4000E69A69 /* PopUpViewController.m */,
 				61E23CB61AE6BCFA00E69A69 /* Main.storyboard */,
 				61E23CB91AE6BCFA00E69A69 /* Images.xcassets */,
 				61E23CBB1AE6BCFA00E69A69 /* LaunchScreen.xib */,
 				61E23CAC1AE6BCFA00E69A69 /* Supporting Files */,
-				61E23CD21AE6CE4000E69A69 /* PopUpViewController.h */,
-				61E23CD31AE6CE4000E69A69 /* PopUpViewController.m */,
 			);
 			path = presentationController_sb;
 			sourceTree = "<group>";
@@ -127,6 +132,19 @@
 				61E23CC71AE6BCFA00E69A69 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		61E23CDB1AE8439700E69A69 /* ViewToPopUpTransitioningDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				61E23CD81AE8423E00E69A69 /* ViewToPopUpTransitionDelegate.h */,
+				61E23CD91AE8423E00E69A69 /* ViewToPopUpTransitionDelegate.m */,
+				61E23CDC1AE843D800E69A69 /* ViewToPopUpTransitionDelegate+AnimatedTransitioning.h */,
+				61E23CDD1AE843D800E69A69 /* ViewToPopUpTransitionDelegate+AnimatedTransitioning.m */,
+				6104E9231AE8FCC9001AA1FB /* ViewToPopUpPresentationController.h */,
+				6104E9241AE8FCC9001AA1FB /* ViewToPopUpPresentationController.m */,
+			);
+			name = ViewToPopUpTransitioningDelegate;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -229,8 +247,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6104E9251AE8FCC9001AA1FB /* ViewToPopUpPresentationController.m in Sources */,
+				61E23CDA1AE8423E00E69A69 /* ViewToPopUpTransitionDelegate.m in Sources */,
+				61E23CDE1AE843D800E69A69 /* ViewToPopUpTransitionDelegate+AnimatedTransitioning.m in Sources */,
 				61E23CB51AE6BCFA00E69A69 /* ViewController.m in Sources */,
-				61E23CD71AE72B0900E69A69 /* PopoverPresentationController.m in Sources */,
 				61E23CB21AE6BCFA00E69A69 /* AppDelegate.m in Sources */,
 				61E23CAF1AE6BCFA00E69A69 /* main.m in Sources */,
 				61E23CD41AE6CE4000E69A69 /* PopUpViewController.m in Sources */,
@@ -430,6 +450,7 @@
 				61E23CCE1AE6BCFA00E69A69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		61E23CCF1AE6BCFA00E69A69 /* Build configuration list for PBXNativeTarget "presentationController_sbTests" */ = {
 			isa = XCConfigurationList;
@@ -438,6 +459,7 @@
 				61E23CD11AE6BCFA00E69A69 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

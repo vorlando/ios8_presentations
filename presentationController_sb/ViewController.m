@@ -8,11 +8,12 @@
 
 #import "ViewController.h"
 #import "PopUpViewController.h"
-#import "PopoverPresentationController.h"
+#import "ViewToPopUpTransitionDelegate.h"
 
 @interface ViewController ()
 - (IBAction)clickMe:(id)sender;
 @property (weak, nonatomic) IBOutlet UIButton *button;
+@property (strong, nonatomic) ViewToPopUpTransitionDelegate *td;
 
 @end
 
@@ -33,22 +34,16 @@
   PopUpViewController *pvc = [sb instantiateViewControllerWithIdentifier:@"popOverViewController"];
 
   // Set the modal presentation style for the presentedViewController
-  pvc.modalPresentationStyle = UIModalPresentationPopover;
+  // if this is custom, then you need to set transitioningDelegate
 
-  //get instance of PopoverPresentationController from presentedViewController
-  UIPopoverPresentationController *popPC = pvc.popoverPresentationController;
+  pvc.modalPresentationStyle = UIModalPresentationCustom;
 
-
-  // set attributes
-  popPC.permittedArrowDirections = UIPopoverArrowDirectionAny;
-
-  popPC.sourceView = self.button;
-  popPC.sourceRect = self.button.bounds;
-
-  // add this to override default compact behavior and get popover on compact screens
-  pvc.popoverPresentationController.delegate = self;
+  self.td  = [[ViewToPopUpTransitionDelegate alloc]init];
+  pvc.transitioningDelegate  = self.td;
 
   // present the new controller
+  
+  pvc.presentingController = self;
   [self presentViewController:pvc animated:YES completion:nil];
 
 }

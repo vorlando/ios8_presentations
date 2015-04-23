@@ -9,5 +9,5 @@
 #import <UIKit/UIKit.h>
 
 @interface PopUpViewController : UIViewController
-
+@property (strong, nonatomic) UIViewController *presentingController;
 @end
